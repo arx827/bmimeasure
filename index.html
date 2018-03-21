@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BMI</title>
+        <link rel="stylesheet" href="vendor/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <section id="intro">
+            <div class="container">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-md text-center">
+                        <img class="logo img-fluid" src="images/BMICLogo.png">
+                    </div>
+                    <div class="col-md-4 col-8 inputGroup">
+                        <div class="form-group height">
+                            <label for="height">身高 cm</label>
+                            <input type="text" class="form-control" id="heightInput" aria-describedby="height" placeholder="請輸入身高" value="">
+                        </div>
+                        <div class="form-group weight">
+                            <label for="weight">體重 kg</label>
+                            <input type="text" class="form-control" id="weightInput" aria-describedby="weight" placeholder="請輸入體重" value="">
+                        </div>
+                    </div>
+                    <div class="col-md text-center">
+                        <div class="output">
+                            <div class="btnOrign">看結果</div>
+                            <div class="btnOrign2 close">
+<!--
+                                <div class="result txt-bmiColor-1 border-Color-1">
+                                    <span>20.90</span><small>BMI</small><div class="icon"><img src="images/icons_loop.png"></div>
+                                </div>
+                                <h3 class="txt-bmiColor-1 resultText">理想</h3>
+-->
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="main">
+           <div class="container">
+            <h5 class="text-center">BMI紀錄</h5>
+            <ul class="list">
+                <li class="border-Color-3">
+                    <div class="row justify-content-between">
+                        <div class="col-lg col-md-6">理想</div>
+                        <div class="col-lg col-md-6"><small>BMI</small> 20.90</div>
+                        <div class="col-lg col-md-6"><small>weight</small> 70kg</div>
+                        <div class="col-lg col-md-6"><small>height</small> 180cm</div>
+                        <div class="col-lg"><small>06-19-2017</small></div>
+                        <div class="col-lg-1 col-md remove"><a data-num="1" href="#">刪除</a></div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <footer>
+            <section>
+                <div class="col-md text-center">
+                    <img class="logo img-fluid" src="images/BMICLogo.png">
+                </div>
+            </section>
+        </footer>
+        <script src="vendor/jquery/3.2.1/jquery-3.2.1.min.js"></script>
+        <script src="vendor/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>   
+        <script src="js/all.js"></script>
+    </body>
+</html>
